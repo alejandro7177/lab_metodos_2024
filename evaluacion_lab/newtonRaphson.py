@@ -30,7 +30,7 @@ def NewtonRaphson():
         table=table,
         execution_time=end-start
     )
-    table.to_csv('table.csv')
+    table.to_csv('table_newton_raphson.csv')
 
 NewtonRaphson()
 

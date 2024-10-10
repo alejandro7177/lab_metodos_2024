@@ -14,7 +14,7 @@ def plot_newtonraphson_results(f, table:pd.DataFrame, execution_time):
 
     plt.plot(x_values, fx_values, marker='o', linestyle='-', color='b', label='Newton-Raphson Points')
 
-    plt.title('Newton-Raphson Iterations with f(x)')
+    plt.title('Newton-Raphson Iteraciones')
     plt.xlabel('x')
     plt.ylabel('f(x)')
     plt.grid(True)
@@ -22,4 +22,4 @@ def plot_newtonraphson_results(f, table:pd.DataFrame, execution_time):
 
     plt.text(0.95, 0.95, f'Time: {execution_time:.5f} s', fontsize=12, color='green',verticalalignment='top', horizontalalignment='right', transform=plt.gcf().transFigure,bbox=dict(facecolor='white', alpha=0.5))
 
-    plt.savefig("grafico.png",format='png', dpi=300)
+    plt.savefig("grafico_newton_raphson.png",format='png', dpi=300)
