@@ -27,23 +27,23 @@ def validar_funcion():
 
 def validar_error()->float:
     while True:
-        e_input = input("\nIngrese el error (defaul 0.001):")
+        e_input = input("\nIngrese el error (default 0.001):")
         if e_input == "":
             return 0.001
         try:
             error = float(e_input)
-            if error < 0.001:
+            if error > 0.001:
                 print("El error debe ser menor a 0.001")
                 continue
             return error
         except ValueError:
             print("Error no válido, por favor ingrese un número.")
 
-def validar_x0()->float:
+def validar_x(i:int)->float:
     while True:
-        x_input = input("ingrese el x0:")
+        x_input = input(f"ingrese el x_{i}:")
         try:
             x = float(x_input)
             return x
         except ValueError:
-            print("x0 no válido, por favor ingrese un número.")
+            print(f"x{i} no válido, por favor ingrese un número.")
