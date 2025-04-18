@@ -6,9 +6,6 @@ def validar_funcion():
     while True:
         f_input = input("Digite la función (con variable x): ")
 
-        if f_input == "!exit" or "exit":
-            exit
-
         try:
             f_simb = sp.sympify(f_input)
             df_simb = sp.diff(f_simb, x)

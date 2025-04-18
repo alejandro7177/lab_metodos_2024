@@ -26,7 +26,7 @@ def plot_newtonraphson_results(f, table:pd.DataFrame, execution_time):
 
 def plot_function(f):
 
-    x_vals = np.linspace(-1, 1, 30)
+    x_vals = np.linspace(-2, 2, 30)
     y_vals = f(x_vals)
     plt.figure(figsize=(8, 6))
     plt.plot(x_vals, y_vals, label='f(x)', color='blue', linewidth=2)
